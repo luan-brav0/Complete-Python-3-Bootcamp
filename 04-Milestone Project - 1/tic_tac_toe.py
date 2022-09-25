@@ -6,9 +6,12 @@ def main():
     def display_board(board):
         '''Assumes list board
         prints board in 3 rows'''
-        print(board[6:])
-        print(board[3:6])
-        print(board[:3])
+       
+        print('', board[6] , '|' , board[7] , '|' , board[8])
+        print('---|---|---')
+        print('', board[3] , '|' , board[4] , '|' , board[5])
+        print('---|---|---')
+        print('',board[0] , '|' , board[1] , '|' , board[2])
 
     def choose_marker(marker):
         while marker not in ['X', 'O']:
