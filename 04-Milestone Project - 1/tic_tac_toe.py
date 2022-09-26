@@ -6,7 +6,6 @@ def main():
     def display_board(board):
         '''Assumes list board
         prints board in 3 rows'''
-       
         print('', board[6] , '|' , board[7] , '|' , board[8])
         print('---|---|---')
         print('', board[3] , '|' , board[4] , '|' , board[5])
@@ -18,9 +17,8 @@ def main():
             marker = input('Choose your marker: [X/O] : ').upper()
         return marker
 
-  
     def rand_first():
-        '''Return int either equal to 1 or 2. 
+        '''Return int either equal to 1 or 2.
         Randomly pics a player'''
         return random.randint(1,2)
 
@@ -82,9 +80,6 @@ def main():
       Checks for wins in (lower row) or (mid row) or (upper row) or (down diagonal) or (up diagonal)'''
         return (board[0] == board[1] == board [2]) or (board[3] == board[4] == board[5]) or (board[6] == board[7] == board[8])  or (board[0] == board[3] == board[6]) or (board[1] == board[4] == board[7]) or (board[2] == board[5] == board[8]) or(board[6] == board[4] == board[2]) or (board[0] == board[4] == board[8])
         
-         
-
-
 # ------------------ end of functions
 
     print('Welcome to Tic Tac Toe!')
