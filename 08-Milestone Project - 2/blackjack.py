@@ -10,77 +10,6 @@ values = {'Two':2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8,
              'Queen':10, 'King':10, 'Ace':11}
 playing = True
 
-# # # def player_blackjack(player_points, dealer_points):
-# # #     if player_points > 21:
-# # #         print ("Player Busts!")
-# # #         return True
-# # #     return False
-
-# # # def player_busts(player_points, dealer_points):
-# # #     if player_points > 21:
-# # #         print ("Player Busts!")
-# # #         return True
-# # #     return False
-
-# # # def player_wins(player_points, dealer_points):
-# # #     if player_points < 21 :
-# # #         print ("Dealer Wins!")
-# # #         return True
-# # #     return False
-
-# # # def dealer_busts(player_points, dealer_points):
-# # #     if dealer_points > 21:
-# # #         print ("Dealer Busts!")
-# # #         return True
-# # #     return False
-    
-# # # def dealer_wins(player_points, dealer_points):
-# # #     if dealer_points > 21:
-# # #         print ("Dealer Wins!")
-# # #         return True
-# # #     return False
-
-# # # def push(player_points, dealer_points):
-# # #     if dealer_points == player_points and  dealer_points <= 21 and player_points <= 21:
-# # #         print ("Push!")
-# # #         return True
-# # #     return False
-# # def show_some(player,dealer):
-# #     print("Dealers' Hand :", dealer[0])
-# #     print("Player's Hand :", player)
-
-# # def show_all(player,dealer):
-# #     '''Assumes lists player and dealer.
-# #     Returns ints player points and dealer points.
-# #     Prints the cards and values of each hand.'''
-# #     player_points = 0
-# #     dealer_points = 0
-# #     for card in player:
-# #         player_points += values.get(card)
-# #     for card in dealer:
-# #         dealer_points += values.get(card)
-# #     print(f"Player's Hand : {player} ({player_points})") 
-# #     print(f"Dealers' Hand : {dealer} ({dealer_points})")
-# #     return player_points, dealer_points
-
-# def hit_or_stand(hand):
-#     global playing  # to ansrol an upcoming while loop
-#     hit_or_stand = ''
-#     while playing:
-#             hit_or_stand = input("Would you like to [H]it or [S]tand? [H/S] : ")
-#             if hit_or_stand not in ('H', 'S'):
-#                 raise ValueError("Please enter a valid input : [H/S]")
-#             if hit_or_stand == 'H':
-#                 hand.hit()
-#                 return playing
-#             else:
-#                 playing = False
-#                 return playing
-#     return playing
-
-    
-
-
 class Card:
     
     def __init__(self,suit,rank):
@@ -187,7 +116,6 @@ class Chips:
         self.bet = 0
 
     def lose_bet(self):
-        self.total -= self.bet * 2
         self.bet = 0
     
     # def double_bet(self):
